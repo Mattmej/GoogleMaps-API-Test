@@ -14,7 +14,7 @@ function init () {
       document.getElementById('detailsBtn').addEventListener('click', function () {
           //Display detail panel
           directionsDisplay.setPanel(document.getElementById('bottom-panel'));
-          // var control = document.getElementById('floating-panel');
+          var control = document.getElementById('floating-panel');
           // control.style.display = 'block';
           map.controls[google.maps.ControlPosition.TOP_CENTER].push(control);
       });

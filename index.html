@@ -6,6 +6,10 @@
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
   <meta charset="utf-8">
 
+  <!-- Link to Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
   <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
   <style>
     /* Always set the map height explicitly to define the size of the div
@@ -79,23 +83,36 @@
 </head>
 
 <body>
+
+  <div class = "container">
+    <div class = "row">
+      <div class = "col-6">
+        <input id="start" class="controls" type="text" placeholder="Enter Your Start Address" onFocus="geolocate()">
+
+        <select id="mode" class="controls">
+            <option value="DRIVING">Select Travel Option</option>
+            <option value="DRIVING">Driving</option>
+            <option value="WALKING">Walking</option>
+            <option value="BICYCLING">Bicycling</option>
+            <option value="TRANSIT">Transit</option>
+        </select>
+        
+        <button id="detailsBtn" class="btn btn-secondary">Details</button>
+        
+        <!--map-->
+        <div id="map"></div>
+      </div>
+
+      <div class = "col-6">
+        <!--detail direction panel-->
+        <div id="bottom-panel"></div>
+      </div>
+
+    </div>
+  </div>
   
-  <input id="start" class="controls" type="text" placeholder="Enter Your Start Address" onFocus="geolocate()">
   
-  <select id="mode" class="controls">
-      <option value="DRIVING">Select Travel Option</option>
-      <option value="DRIVING">Driving</option>
-      <option value="WALKING">Walking</option>
-      <option value="BICYCLING">Bicycling</option>
-      <option value="TRANSIT">Transit</option>
-  </select>
   
-  <button id="detailsBtn" class="btn btn-secondary">Details</button>
-  
-  <!--map-->
-  <div id="map"></div>
-  <!--detail direction panel-->
-  <div id="bottom-panel"></div>
 
   <script>
     //Global Variables

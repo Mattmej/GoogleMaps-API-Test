@@ -1,0 +1,14 @@
+.space {
+    margin-bottom: 20px;
+}
+
+#vid-display {
+    position: relative;
+    height: 380px;
+}
+
+.display {
+    position: absolute;
+    height: 100%;
+    width: 94%;
+}

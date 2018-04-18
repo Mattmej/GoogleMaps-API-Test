@@ -1,0 +1,69 @@
+body {
+    overflow-x: hidden;
+}
+
+.color-deepblue {
+    color: #31708e;
+}
+
+.color-white {
+    color: #f7f9fb;
+}
+
+.bg-deepblue {
+    background-color: #31708e;
+}
+
+.bg-blue {
+    background-color: #5085a5;
+}
+
+.bg-lightblue {
+    background-color: #8fc1e3;
+}
+
+.bg-darkgreen {
+    background-color: #687864;
+}
+
+.space {
+    margin-bottom: 20px;
+}
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.img-sizer {
+    width: 100%;
+    background-size: contain;
+}
+
+.circle-sizer {
+    width: 40%;
+    height: 25%;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.circle-sizer-2 {
+    width: 40%;
+    height: 25%;
+    text-align: center;
+    padding: 20px;
+}
+
+.placeholder {
+    border: 1px solid black;
+    text-align: center;
+    padding: 80px 0px;
+}
+
+.text-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-robCondensed {
+    font-family: 'Roboto Condensed', sans-serif;
+}
